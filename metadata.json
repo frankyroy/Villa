@@ -1,0 +1,7 @@
+{
+  "name": "Villa Los Ángeles Admin",
+  "description": "A comprehensive condominium management platform.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
