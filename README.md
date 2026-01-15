@@ -10,7 +10,7 @@ Para desplegar esta aplicación en Vercel:
 1.  Sube el código a un repositorio de **GitHub**.
 2.  Importa el proyecto en [Vercel](https://vercel.com).
 3.  Configura la **Variable de Entorno**:
-    *   `API_KEY`: TAIzaSyAJ5xMdpi8ld5VZFj2zvhKBtQqGMYkzhJ0
+    *   `API_KEY`: Tu clave de API de Google Gemini.
 4.  ¡Listo! Vercel detectará automáticamente que es un proyecto de Vite y realizará el build.
 
 ## 🛠️ Tecnologías
