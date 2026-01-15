@@ -16,7 +16,8 @@ import {
   User,
   ArrowUpRight,
   AlertCircle,
-  Trash2
+  Trash2,
+  Tag
 } from 'lucide-react';
 
 const PAYMENTS_STORAGE_KEY = 'villa_los_angeles_payments';
@@ -326,6 +327,25 @@ const PaymentManager: React.FC = () => {
                       : setEditingPayment({...editingPayment!, balance: parseFloat(e.target.value)})}
                     className="w-full px-5 py-3.5 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none bg-white font-bold text-sm"
                   />
+                </div>
+              </div>
+
+              <div className="space-y-1.5">
+                <label className="text-[10px] font-black text-gray-400 uppercase tracking-widest ml-1">ESTADO DEL PAGO</label>
+                <div className="relative">
+                  <Tag size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-300" />
+                  <select 
+                    required
+                    value={isAdding ? newPayment.status : editingPayment?.status}
+                    onChange={(e) => isAdding 
+                      ? setNewPayment({...newPayment, status: e.target.value as any}) 
+                      : setEditingPayment({...editingPayment!, status: e.target.value as any})}
+                    className="w-full pl-11 pr-4 py-3.5 border border-gray-200 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none bg-white text-gray-800 font-bold text-sm appearance-none"
+                  >
+                    <option value="paid">Pagado</option>
+                    <option value="pending">Pendiente</option>
+                    <option value="overdue">Atrasado</option>
+                  </select>
                 </div>
               </div>
 
