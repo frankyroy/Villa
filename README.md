@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# 🏠 Villa Los Ángeles - Administrador de Condominio
 
-This contains everything you need to run your app locally.
+Este proyecto es una plataforma integral para la gestión de condominios, diseñada específicamente para **Villa Los Ángeles**. Permite administrar unidades, residentes, pagos y reportes de mantenimiento con una interfaz moderna y asistencia de IA integrada.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1s_MGN8RYTtpnPaJL-ntJadBKqtipFFII
+## 🚀 Despliegue en Vercel
 
-## Run Locally
+Para desplegar esta aplicación en Vercel:
 
-**Prerequisites:**  Node.js
+1.  Sube el código a un repositorio de **GitHub**.
+2.  Importa el proyecto en [Vercel](https://vercel.com).
+3.  Configura la **Variable de Entorno**:
+    *   `API_KEY`: Tu clave de API de Google Gemini.
+4.  ¡Listo! Vercel detectará automáticamente que es un proyecto de Vite y realizará el build.
 
+## 🛠️ Tecnologías
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+*   **React 19** + **TypeScript**
+*   **Vite** (Build Tool)
+*   **Tailwind CSS** (Estilos)
+*   **Lucide React** (Iconografía)
+*   **Google Gemini API** (Inteligencia Artificial para análisis y asistencia)
+
+## 📦 Instalación Local
+
+```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
+
+# Construir para producción
+npm run build
+```
+
+## 📄 Características Principales
+
+*   **Dashboard Operativo**: Resumen financiero y de ocupación en tiempo real.
+*   **Gestión de Villas**: Registro con fotografía y control de estado.
+*   **Control de Pagos**: Historial de cuotas, saldos y estados de morosidad.
+*   **Mantenimiento**: Reportes de incidencias con cálculo de costos.
+*   **Reportes**: Generación automática de balances para compartir.
+
+---
+Administración Villa Los Ángeles.
